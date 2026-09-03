@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE 2</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            border: 2px solid #ddd;
+        }
+        td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+            vertical-align: top;
+            background-color: #f9f9f9;
+        }
+        h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+        canvas {
+            border: 1px solid #999;
+            background-color: black;
+        }
+        span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>ATIVIDADE 2 - INTERAÇÃO COM MOUSE E BRESENHAM</h1>
+    
+    <table>
+        <tr>
+            <td>
+                <h3>LINHA 2 PONTOS</h3>
+                
+                <canvas id="linha" width="600" height="600"></canvas>
+
+                <div>
+                    <p id="canvasCoordinates">
+                        Canvas: (300, 300)
+                    </p>
+
+                    <p id="webglCoordinates">
+                        WebGL: (0.000, 0.000)
+                    </p>
+                    <p>
+                    Cor:
+                    <span id="colorBox"></span>
+                    </p>
+                </div>
+
+            </td>
+            <td>
+                <h3>LINHA 3 PONTOS / TRIANGULO</h3>
+                
+                <canvas id="linha_triangulo" width="600" height="600"></canvas>
+
+                <div>
+                    <p id="canvasCoordinatesT">
+                        Canvas: (300, 300)
+                    </p>
+
+                    <p id="webglCoordinatesT">
+                        WebGL: (0.000, 0.000)
+                    </p>
+                    <p>
+                    Cor:
+                    <span id="colorBoxT"></span>
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script src="linha.js"></script>
+    <script src="linha_triangulo.js"></script>    
+
+
+</body>
+</html>
